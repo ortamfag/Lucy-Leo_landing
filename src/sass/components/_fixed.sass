@@ -1,0 +1,43 @@
+.fixed 
+    background-color: #6ccdc3
+    display: flex
+    align-items: center
+    position: fixed
+    width: 67%
+    padding: 5px 5% 5px 5%
+    margin: auto
+    left: 0
+    right: 0
+    border-radius: 0px 0px 40px 40px
+
+    & img
+        width: 60px
+        height: 60px
+
+    & p
+        font: 
+            family: $font
+            weight: 400
+        color: $white
+        margin: 0px 2em 0px 20px
+
+    & button
+        padding: 10px 15px
+        border: 0px
+        border-radius: 10px
+        color: $white
+        cursor: pointer
+        font:
+            family: $font
+            weight: 700
+        background: linear-gradient(300deg, #ff00c8, #ff6900, #ffb600, #ff6900, #ff00c8)
+        background-size: 1000% 1000%
+        animation: main-button 10s ease infinite
+
+@keyframes main-button 
+  0% 
+    background-position: 0% 40%
+  50%
+    background-position: 100% 61%
+  100%
+    background-position: 0% 40%

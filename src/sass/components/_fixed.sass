@@ -1,35 +1,43 @@
 .fixed 
-    padding: $grid
-    background-color: #6ccdc3
+    padding: 5px 3% 5px 3%
+    background-color: $bgblue
     display: flex
     align-items: center
+    justify-content: space-between
     position: fixed
-    width: 67%
-    padding: 5px 5% 5px 5%
+    width: calc(100% - 15%)
     margin: auto
     left: 0
     right: 0
     border-radius: 0px 0px 40px 40px
+    z-index: 999
     visibility: hidden
+    
+    &__inner
+      display: flex
+      align-items: center
+      justify-content: space-between
 
     & img
         width: 60px
         height: 60px
 
     & p
-        font: 
-            weight: 400
+        font:
+          weight: $medium
+          size: calc(16px + 8 * (100vw / 1920))
         color: $white
-        margin: 0px 2em 0px 20px
+        margin: 0px 20px 0px 20px
 
     & button
+        min-width: 150px
         padding: 10px 15px
         border: 0px
         border-radius: 10px
         color: $white
         cursor: pointer
-        font:
-            weight: 700
+        font-weight: $bold
+        font-size: calc(15px + 9 * (100vw / 1920))
         background: linear-gradient(300deg, #ff00c8, #ff6900, #ffb600, #ff6900, #ff00c8)
         background-size: 1000% 1000%
         animation: main-button 10s ease infinite
@@ -37,7 +45,9 @@
 @keyframes main-button 
   0% 
     background-position: 0% 40%
+
   50%
     background-position: 100% 61%
+
   100%
     background-position: 0% 40%

@@ -1,0 +1,83 @@
+.advantages
+    padding: $grid
+    margin-top: 50px
+
+    &__instructions
+        display: flex
+        flex-direction: column
+
+    &__item
+        display: flex
+        align-items: center
+        margin: 10px auto
+
+        &-step
+            border-radius: 50px
+            width: 48px
+            height: 48px
+            background-color: $red
+            padding: 10px 20px
+            font:
+                size: 30px
+                weight: $bold
+
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 20px
+
+            & p
+                color: $white
+
+        &-text
+            color: $white
+            display: flex
+            flex-direction: column
+            padding: 15px 20px
+            border-radius: 20px
+            background-color: $red
+            padding: 10px 30px
+            text-align: center
+
+            min-width: 400px
+            cursor: pointer
+            
+
+            & p
+                color: $white
+
+                &:nth-child(1)
+                    text-transform: uppercase
+                    font:
+                        size: 16px
+                        weight: $bold
+                    margin-bottom: 5px
+
+                &:nth-child(2)
+                    text-transform: lowercase
+                    font:
+                        size: 16px
+                        weight: $medium
+
+    &__reactions
+
+        & h2
+            font:
+                size: 24px
+                weight: $medium
+            width: 430px
+            text-align: center
+            margin: 50px auto
+
+    &__video
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &-item 
+            
+            margin-right: 10px
+            
+            & video
+                border-radius: 40px
+                

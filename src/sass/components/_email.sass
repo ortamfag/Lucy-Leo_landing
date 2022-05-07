@@ -1,0 +1,103 @@
+.email
+    padding: $grid
+    margin-top: 50px
+
+    &__wrapper
+        background-color: #6ccdc3
+        border-radius: 40px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15px 20px
+
+        &-img img
+            width: 100%
+
+        &-button
+
+            margin-top: 50px
+
+            & button
+                background-color: $red
+                outline: none
+                border: 0
+                padding: 15px
+                border-radius: 20px
+                color: $white
+                font:
+                    family: $font
+                    size: 16px
+                    weight: $bold
+                min-width: 150px
+                cursor: pointer
+
+        &-inner
+            display: flex
+            flex-direction: column
+            margin: 0px 15px
+            width: 55%
+
+            & p
+                font:
+                    size: 24px
+                    weight: $medium
+                color: $white
+                margin-bottom: 20px
+            
+            & span
+                font-weight: $bold
+                color: $white
+
+            input[type="email"]
+                padding: 10px
+                background-color: $white
+                border: 0px
+                border-radius: 20px
+                outline: none
+                font-family: $font
+                text-indent: 15px
+
+       
+    
+    &__checkbox
+
+        margin-top: 20px
+
+        input[type="checkbox"]
+            display: none
+
+        label
+            color: $white
+            font-family: $font
+            font-weight: $medium
+            cursor: pointer
+            user-select: none
+            line-height: 30px
+            padding: 10px 0
+            vertical-align: middle
+            margin-top: 20px
+
+        label:before
+            content: ''
+            color: $red
+            display: inline-block
+            font: 30px/30px $font
+            margin-right: 15px
+            text-align: center
+            text-indent: 0px
+            width: 30px
+            height: 30px
+            background: $white
+            border: 0px
+            border-radius: 10px
+            border-image: initial
+            vertical-align: middle
+
+        input:checked + label:before
+            content: '✔'
+
+        input:disabled + label:before
+            background: $red
+            color: $red
+    

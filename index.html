@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="src/css/style.min.css" />
   <!-- ChiefSlider CSS -->
   <link rel="stylesheet" href="src/css/chief-slider.min.css">
   <!-- ChiefSlider JavaScript -->
   <script src="src/js/chief-slider.min.js"></script>
+  
+  <link rel="stylesheet" href="src/css/style.min.css" />
 </head>
 
 <body>
@@ -88,6 +89,14 @@
       <!-- Кнопки для перехода к предыдущему и следующему слайду -->
       <a href="#" class="slider__control" data-slide="prev"></a>
       <a href="#" class="slider__control" data-slide="next"></a>
+
+      <ol class="slider__indicators">
+        <li data-slide-to="0"></li>
+        <li data-slide-to="1"></li>
+        <li data-slide-to="2"></li>
+        <li data-slide-to="3"></li>
+        <li data-slide-to="4"></li>
+      </ol>
     </div>
 
     <section class="partners">
@@ -538,6 +547,31 @@
 
 
    </section>
+
+   <section class="second__slider">
+    
+    <div class="slider slider2">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <!-- Контент 1 слайда -->
+              <img src="src/img/slider1.png">
+            </div>
+            <div class="slider__item">
+              <!-- Контент 2 слайда -->
+              <img src="src/img/slider2.png">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+      <a href="#" class="slider__control" data-slide="prev"></a>
+      <a href="#" class="slider__control" data-slide="next"></a>
+      
+    </div>
+  </section>
   </main>
 
   <script src="src/js/script.js"></script>

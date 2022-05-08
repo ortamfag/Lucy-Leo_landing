@@ -26,6 +26,34 @@
         position: static
         background-color: #f7f7f7
 
+    &-1
+        display: grid
+        grid-template-columns: 50% 50%
+        
+        &-left
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: $bgblue
+
+            & h2
+                font:
+                    weight: $bold
+                color: $white
+
+                &:nth-child(1)
+                    font-size: 80px
+
+                &:nth-child(2)
+                    font-size: 45px
+
+        &-right
+
+            & img
+                height: 100% !important
+                    
+                    
 
 
 .marquee

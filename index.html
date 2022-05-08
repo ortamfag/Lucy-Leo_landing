@@ -120,18 +120,12 @@
             </div>
             <div class="slider__item">
               <!-- Контент 3 слайда -->
-              <!--<iframe width="100%" height="700" src="https://www.youtube.com/embed/TcuOCj1XteI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <img id="first__preview" src="src/img/first-slider.png">
             </div>
 
             <div class="slider__item">
               <!-- Контент 3 слайда -->
-              <!--<iframe width="100%" height="700" src="https://www.youtube.com/embed/jpkVCL0fGuo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>-->
+              <img id="second__preview" src="src/img/second-slider.png">
             </div>
           </div>
         </div>
@@ -140,13 +134,46 @@
       <a href="#" class="slider__control slider__control-first" data-slide="prev"></a>
       <a href="#" class="slider__control slider__control-first" data-slide="next"></a>
 
-      <ol class="slider__indicators">
-        <li data-slide-to="0"></li>
-        <li data-slide-to="1"></li>
-        <li data-slide-to="2"></li>
-        <li data-slide-to="3"></li>
-        <li data-slide-to="4"></li>
-      </ol>
+      <ul class="slider__indicators">
+        <li id="first" data-slide-to="0"></li>
+        <li id="second" data-slide-to="1"></li>
+        <li id="third" data-slide-to="2"></li>
+        <li id="fourth" data-slide-to="3"></li>
+        <p id="text">Retail chain in Tallinn, Estonia</p>
+        
+      </гl>
+    </div>
+
+    <div id="firstPopup" class="popup">
+      <div id="firstBg" class="bg"></div>
+      <div class="popup__body">
+        <div style="width: 100vw; padding: 0;" class="popup__content">
+          <a id="firstCross" class="popup__close"></a>
+
+          <div class="popup__wrapper">
+            <iframe width="100%" height="700" src="https://www.youtube.com/embed/TcuOCj1XteI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="secondPopup" class="popup">
+      <div id="secondBg" class="bg"></div>
+      <div class="popup__body">
+        <div style="width: 100vw; padding: 0;" class="popup__content">
+          <a id="secondCross" class="popup__close"></a>
+
+          <div class="popup__wrapper">
+            <iframe width="100%" height="700" src="https://www.youtube.com/embed/jpkVCL0fGuo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section class="partners">

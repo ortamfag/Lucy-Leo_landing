@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider = new ChiefSlider('.slider', {
       loop: true,
       autoplay: true,
-      interval: 5000,
+      interval: 3000,
     });
   });
 
@@ -39,3 +39,18 @@ const makeModal = modalSel => {
 }
 
 makeModal('#contact')
+makeModal('#first')
+makeModal('#second')
+
+
+const first = document.querySelector('#first')
+const second = document.querySelector('#second')
+const third = document.querySelector('#third')
+const fourth = document.querySelector('#fourth')
+
+
+
+first.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Tallinn, Estonia")
+second.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Kaunas, Lithuania")
+third.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at China Toy Expo Toy Fair 2019, Shanghai")
+fourth.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at Spielwarenmesse Toy Fair 2020, Germany")

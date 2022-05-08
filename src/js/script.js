@@ -54,3 +54,21 @@ first.addEventListener('transitionstart', () => text.innerHTML="Retail chain in 
 second.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Kaunas, Lithuania")
 third.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at China Toy Expo Toy Fair 2019, Shanghai")
 fourth.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at Spielwarenmesse Toy Fair 2020, Germany")
+
+
+const slider = document.querySelector('.swiper-container');
+
+let mySwiper = new Swiper(slider, {
+	slidesPerView: 2,
+	spaceBetween: 50,
+	centeredSlides: true,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+})

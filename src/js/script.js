@@ -14,3 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  $(function() {
+    $('.marquee').marquee({
+      duration: 11000,
+      startVisible: true,
+      duplicated: true,
+      direction: 'right'
+    });
+  });

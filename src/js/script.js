@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $(function() {
     $('.marquee').marquee({
-      duration: 11000,
+      duration: 22000,
       startVisible: true,
       duplicated: true,
       direction: 'right'

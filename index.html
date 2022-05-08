@@ -15,8 +15,8 @@
   <!-- ChiefSlider JavaScript -->
   <script src="src/js/chief-slider.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
   <link rel="stylesheet" href="src/css/style.min.css" />
 </head>
 
@@ -27,39 +27,47 @@
       <p>Become a partner to resell our brand or contract manufacturing</p>
     </div>
     <button id="contact__preview">Contact us</button>
-    
+
     <div id="contactPopup" class="popup">
       <div id="contactBg" class="bg"></div>
       <div class="popup__body">
-          <div class="popup__content">
-              <a id="contactCross" class="popup__close"><img src="src/img/close.svg" alt="закрыть"></a>
-              <div class="popup__title">
-                  <img src="src/img/britain.png" alt="великобритания">
-                  <p>Великобритания</p>
-              </div>
-              <div class="popup__text">
-                  <p>Выявление пациентов, находящихся в группе
-                      с высоким риском
-                  </p>
+        <div class="popup__content">
+          <a id="contactCross" class="popup__close"><img src="src/img/close.svg" alt="закрыть"></a>
 
-                  <p><span>Кто реализует:</span> совместная разработка ряда медицинских и
-                      исследовательских организаций Великобритании при финансовой поддержки
-                      фармацевтической компании GlaxoSmithKline</p>
-                  <p><span>Описание:</span> Предиктивная модель позволяет проводить скрининг большого
-                      количества пациентов и выявлять тех, кто находится в группе высокого риска, до
-                      появления симптомов. Текущая модель была разработана
-                      для выявления идиопатической легочной гипертензии. Для ее построения были
-                      использованы данные 3 млн пациентов, собранные в рамках программы Hospital Episode
-                      Statistics* Национальной службы здравоохранения Великобритании. </p>
-                  <p><span>Статус реализации:</span> разработана первичная модель, необходима доработка
-                      и масштабирование.</p>
-                  <p><span>Ожидаемые результаты:</span> упрощение проведения скрининга всего населения для
-                      превентивного выявления пациентов, сокращение расходов на лечение сложных
-                      заболеваний.</p>
-              </div>
+          <div class="popup__wrapper">
+            <div class="popup__title">
+              <img src="src/img/popup.png">
+            </div>
+            <div class="popup__text">
+              <h2>Have more questions?</h2>
+              <h2>Want to cooperate?</h2>
+              <p>Take the first step towards become a partner by filling
+                out this form. We will be glad to meet you and start
+                negotiations.</p>
+
+              <form>
+                <p>Please, introduce yourself:</p>
+                <input type="text" placeholder="Your name">
+
+                <p>How to contact you:</p>
+                <input placeholder="E-mail" type="email">
+                <div class="popup__text-form">
+                  <input placeholder="+0000" type="number">
+                  <input placeholder="Phone number" type="tel">
+                </div>
+
+                <div class="popup__checkbox">
+                  <input type="checkbox" id="checkbox-id-p">
+                  <label for="checkbox-id-p">I agree to the processing of personal data</label>
+                </div>
+
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 
   <header class="header">
@@ -274,204 +282,208 @@
       </div>
     </section>
 
-   <section class="advantages">
-     <div class="advantages__instructions">
-       <div class="advantages__item">
-         <div class="advantages__item-step">
+    <section class="advantages">
+      <div class="advantages__instructions">
+        <div class="advantages__item">
+          <div class="advantages__item-step">
             <p>1</p>
-         </div>
+          </div>
 
-         <div class="advantages__item-text">
-           <p>be a distributor in your country</p>
-           <p>click to fill out an application</p>
-         </div>
-       </div>
-
-       <div class="advantages__item">
-        <div style="background-color: #eb404e" class="advantages__item-step">
-           <p>2</p>
+          <div class="advantages__item-text">
+            <p>be a distributor in your country</p>
+            <p>click to fill out an application</p>
+          </div>
         </div>
 
-        <div style="background-color: #eb404e" class="advantages__item-text">
-          <p>be a retailer in your country</p>
-          <p>click to fill out an application</p>
+        <div class="advantages__item">
+          <div style="background-color: #eb404e" class="advantages__item-step">
+            <p>2</p>
+          </div>
+
+          <div style="background-color: #eb404e" class="advantages__item-text">
+            <p>be a retailer in your country</p>
+            <p>click to fill out an application</p>
+          </div>
+        </div>
+
+        <div class="advantages__item">
+          <div style="background-color: #f55461" class="advantages__item-step">
+            <p>3</p>
+          </div>
+
+          <div style="background-color: #f55461" class="advantages__item-text">
+            <p>request contract manufacturing</p>
+            <p>click to fill out an application</p>
+          </div>
         </div>
       </div>
 
-      <div class="advantages__item">
-        <div style="background-color: #f55461" class="advantages__item-step">
-           <p>3</p>
-        </div>
 
-        <div style="background-color: #f55461" class="advantages__item-text">
-          <p>request contract manufacturing</p>
-          <p>click to fill out an application</p>
-        </div>
-      </div>
-     </div>
+      <div class="advantages__reactions">
+        <h2>Check out some <span>genuine reactions</span> to our toys:</h2>
 
-
-     <div class="advantages__reactions">
-       <h2>Check out some <span>genuine reactions</span> to our toys:</h2>
-
-       <div class="advantages__video">
-         <div class="advantages__video-item">
-           <video width="219" height="260" autoplay muted loop playisinline preload="auto" poster="src/img/video/1-preview.svg">
+        <div class="advantages__video">
+          <div class="advantages__video-item">
+            <video width="219" height="260" autoplay muted loop playisinline preload="auto"
+              poster="src/img/video/1-preview.svg">
               <source src="src/img/video/1.mp4">
-           </video>
-         </div>
+            </video>
+          </div>
 
-         <div class="advantages__video-item">
-          <video width="219" height="300" autoplay muted loop playisinline preload="auto" poster="src/img/video/1-preview.svg">
-             <source src="src/img/video/2.mp4">
-          </video>
+          <div class="advantages__video-item">
+            <video width="219" height="300" autoplay muted loop playisinline preload="auto"
+              poster="src/img/video/1-preview.svg">
+              <source src="src/img/video/2.mp4">
+            </video>
+          </div>
+
+          <div class="advantages__video-item">
+            <video width="219" height="300" autoplay muted loop playisinline preload="auto"
+              poster="src/img/video/1-preview.svg">
+              <source src="src/img/video/3.mp4">
+            </video>
+          </div>
         </div>
 
-        <div class="advantages__video-item">
-          <video width="219" height="300" autoplay muted loop playisinline preload="auto" poster="src/img/video/1-preview.svg">
-             <source src="src/img/video/3.mp4">
-          </video>
+        <h2><span>Exclusive and best-selling</span> educational children's wooden toys <span>127 SKUs in
+            stock</span></span></h2>
+      </div>
+    </section>
+
+    <section class="price">
+
+      <div class="price__wrapper">
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game1.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$6,19</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$29,99</span></p>
+          </div>
         </div>
-       </div>
 
-       <h2><span>Exclusive and best-selling</span> educational children's wooden toys <span>127 SKUs in stock</span></span></h2>
-     </div>
-   </section>
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game2.png">
+          </div>
 
-   <section class="price">
+          <div class="price__item-cost">
+            <p><span>$7,78</span> fob price</p>
+          </div>
 
-    <div class="price__wrapper">
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game1.png">
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$39,99</span></p>
+          </div>
         </div>
 
-        <div class="price__item-cost">
-          <p><span>$6,19</span> fob price</p>
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game3.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$4,64</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$29</span></p>
+          </div>
         </div>
 
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$29,99</span></p>
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game4.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$14,41</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$48,8</span></p>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game5.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$8,44</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$29,99</span></p>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game6.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$9,27</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$39,99</span></p>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game7.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$6,17</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$20,99</span></p>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-img">
+            <img src="src/img/catalog/game8.png">
+          </div>
+
+          <div class="price__item-cost">
+            <p><span>$3,25</span> fob price</p>
+          </div>
+
+          <div class="price__item-recommend">
+            <p>Recommended</p>
+            <p>Retail Price: <span>$14,50</span></p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game2.png">
+    <section class="email">
+      <div class="email__wrapper">
+        <div class="email__wrapper-img">
+          <img src="src/img/emailimg.png">
         </div>
 
-        <div class="price__item-cost">
-          <p><span>$7,78</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$39,99</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game3.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$4,64</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$29</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game4.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$14,41</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$48,8</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game5.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$8,44</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$29,99</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game6.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$9,27</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$39,99</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game7.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$6,17</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$20,99</span></p>
-        </div>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-img">
-          <img src="src/img/catalog/game8.png">
-        </div>
-
-        <div class="price__item-cost">
-          <p><span>$3,25</span> fob price</p>
-        </div>
-
-        <div class="price__item-recommend">
-          <p>Recommended</p>
-          <p>Retail Price: <span>$14,50</span></p>
-        </div>
-      </div>
-    </div>
-   </section>
-
-   <section class="email">
-     <div class="email__wrapper">
-       <div class="email__wrapper-img">
-        <img src="src/img/emailimg.png">
-       </div>
-
-       <div class="email__wrapper-inner">
-        <p><span>Get our E-Catalog for 2022</span> with latest toys,
-          we will email it to you in less than 15 seconds.</p>
+        <div class="email__wrapper-inner">
+          <p><span>Get our E-Catalog for 2022</span> with latest toys,
+            we will email it to you in less than 15 seconds.</p>
 
           <input type="email" placeholder="Your email">
 
@@ -479,154 +491,163 @@
             <input type="checkbox" id="checkbox-id">
             <label for="checkbox-id">I agree to the processing of personal data</label>
           </div>
-       </div>
+        </div>
 
-       <div class="email__wrapper-button">
+        <div class="email__wrapper-button">
           <button type="submit">
             Get E-catalog
           </button>
-       </div>
-     </div>
-   </section>
-
-   <section class="benefit">
-     <div class="benefit__wrapper">
-      <h2>Our toys sell well, and they <span>educate & develop!</span></h2>
-
-      <div class="benefit__children">
-        <div class="benefit__children-item">
-          <img src="src/img/advantages-1.png">
-          <h3>Intelligence</h3>
-          <p>Perfectly develop logic. Train memory
-            and cognitive abilities. Teach
-            communication skills.</p>
-        </div>
-
-        <div class="benefit__children-item">
-          <img src="src/img/advantages-2.png">
-          <h3>Physical development</h3>
-          <p>Develop fine motor skills and
-            musculoskeletal system.
-            Develop hand-eye
-            coordination and spatial thinking.</p>
-        </div>
-
-        <div class="benefit__children-item">
-          <img src="src/img/advantages-3.png">
-          <h3>Aesthetic education</h3>
-          <p>Give the skills necessary for elementary
-            school, as well as understanding of
-            shapes and colors. Develop creativity
-            and imagination.</p>
         </div>
       </div>
+    </section>
 
-      <h2>Most <span>safest</span> and <span>natural materials</span></h2>
+    <section class="benefit">
+      <div class="benefit__wrapper">
+        <h2>Our toys sell well, and they <span>educate & develop!</span></h2>
 
-      <div class="benefit__material">
-        <div class="benefit__material-item">
-          <img src="src/img/materal-1.png">
-          <p>The materials of Lucy&Leo toys
-            are beechwood and
-            rubberwood (Hevea). The
-            texture of these species of
-            wood gives the most pleasant
-            and right tactile sensations.
-            </p>
-        </div>
+        <div class="benefit__children">
+          <div class="benefit__children-item">
+            <img src="src/img/advantages-1.png">
+            <h3>Intelligence</h3>
+            <p>Perfectly develop logic. Train memory
+              and cognitive abilities. Teach
+              communication skills.</p>
+          </div>
 
-        <div class="benefit__material-item">
-          <img src="src/img/materal-2.png">
-          <p>Linen fabric is not only
-            pleasant to the touch, but also
-            hypoallergenic.</p>
-        </div>
+          <div class="benefit__children-item">
+            <img src="src/img/advantages-2.png">
+            <h3>Physical development</h3>
+            <p>Develop fine motor skills and
+              musculoskeletal system.
+              Develop hand-eye
+              coordination and spatial thinking.</p>
+          </div>
 
-        <div class="benefit__material-item">
-          <img src="src/img/materal-3.png">
-          <p>The safest water-based varnishes
-            and paints are odorless; they do
-            not cause any reactions; children
-            can even gnaw them.
-            </p>
-        </div>
-
-        <div class="benefit__material-item">
-          <img src="src/img/material-4.png">
-          <p>Lucy&Leo toys are absolutely
-            harmless for children — this is
-            confirmed by European &
-            American safety and quality
-            certificates.
-            </p>
-        </div>
-      </div>
-
-      <h2>Approved by <span>methodologists and teachers</span></h2>
-
-      <div class="benefit__teachers">
-        <img src="src/img/teacher-1.png">
-        <img src="src/img/teacher-2.png">
-        <img src="src/img/teacher-3.png">
-      </div>
-
-      <h2>Tested by <span>15 000 000+</span> <span style="color: #4E4E4E; font-weight: 700;">families</span></h2>
-
-      <div class="benefit__families">
-        <img src="src/img/families.png">
-      </div>
-
-      <h2 style="margin: 5px auto;">Own production in China since 2012.</h2>
-      <h2><span>Created and managed by Europeans.</span></h2>
-     </div>
-
-
-   </section>
-
-   <section class="second__slider">
-
-    <div class='marquee' style='overflow:hidden'>
-      <ul>
-        <li>carton</li>
-        <li>rubberwood-hevea</li>
-        <li>beechwood </li>
-        <li>plywood</li>
-        <li>plastic</li>
-        <li>fabrics</li>
-        <li>paint</li>
-        <li>carton</li>
-        <li>rubberwood-hevea</li>
-        <li>beechwood</li>
-        <li>plywood</li>
-        <li>plastic</li>
-        <li>fabrics</li>
-        <li>paint</li>
-      </ul>
-    </div>
-    
-    
-    <div class="slider slider2">
-      <div class="slider__container">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <!-- Контент 1 слайда -->
-              <img src="src/img/slider1.png">
-            </div>
-            <div class="slider__item">
-              <!-- Контент 2 слайда -->
-              <img src="src/img/slider2.png">
-            </div>
-            
+          <div class="benefit__children-item">
+            <img src="src/img/advantages-3.png">
+            <h3>Aesthetic education</h3>
+            <p>Give the skills necessary for elementary
+              school, as well as understanding of
+              shapes and colors. Develop creativity
+              and imagination.</p>
           </div>
         </div>
+
+        <h2>Most <span>safest</span> and <span>natural materials</span></h2>
+
+        <div class="benefit__material">
+          <div class="benefit__material-item">
+            <img src="src/img/materal-1.png">
+            <p>The materials of Lucy&Leo toys
+              are beechwood and
+              rubberwood (Hevea). The
+              texture of these species of
+              wood gives the most pleasant
+              and right tactile sensations.
+            </p>
+          </div>
+
+          <div class="benefit__material-item">
+            <img src="src/img/materal-2.png">
+            <p>Linen fabric is not only
+              pleasant to the touch, but also
+              hypoallergenic.</p>
+          </div>
+
+          <div class="benefit__material-item">
+            <img src="src/img/materal-3.png">
+            <p>The safest water-based varnishes
+              and paints are odorless; they do
+              not cause any reactions; children
+              can even gnaw them.
+            </p>
+          </div>
+
+          <div class="benefit__material-item">
+            <img src="src/img/material-4.png">
+            <p>Lucy&Leo toys are absolutely
+              harmless for children — this is
+              confirmed by European &
+              American safety and quality
+              certificates.
+            </p>
+          </div>
+        </div>
+
+        <h2>Approved by <span>methodologists and teachers</span></h2>
+
+        <div class="benefit__teachers">
+          <img src="src/img/teacher-1.png">
+          <img src="src/img/teacher-2.png">
+          <img src="src/img/teacher-3.png">
+        </div>
+
+        <h2>Tested by <span>15 000 000+</span> <span style="color: #4E4E4E; font-weight: 700;">families</span></h2>
+
+        <div class="benefit__families">
+          <img src="src/img/families.png">
+        </div>
+
+        <h2 style="margin: 5px auto;">Own production in China since 2012.</h2>
+        <h2><span>Created and managed by Europeans.</span></h2>
       </div>
-      <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-      <a href="#" class="slider__control" data-slide="prev"></a>
-      <a href="#" class="slider__control" data-slide="next"></a>
-      
-    </div>
-  </section>
+
+
+    </section>
+
+    <section class="second__slider">
+
+      <div class='marquee' style='overflow:hidden'>
+        <ul>
+          <li>carton</li>
+          <li>rubberwood-hevea</li>
+          <li>beechwood </li>
+          <li>plywood</li>
+          <li>plastic</li>
+          <li>fabrics</li>
+          <li>paint</li>
+          <li>carton</li>
+          <li>rubberwood-hevea</li>
+          <li>beechwood</li>
+          <li>plywood</li>
+          <li>plastic</li>
+          <li>fabrics</li>
+          <li>paint</li>
+        </ul>
+      </div>
+
+
+      <div class="slider slider2">
+        <div class="slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item">
+                <!-- Контент 1 слайда -->
+                <div class="second__slider-1">
+                  <div class="second__slider-1-left">
+                    <h2>9000 m2</h2>
+                    <h2>Production<br>capacity</h2>
+                    
+                  </div>
+                  <div class="second__slider-1-right">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <!-- Контент 2 слайда -->
+                <img src="src/img/slider2.png">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+
+      </div>
+    </section>
   </main>
 
   <script src="src/js/script.js"></script>

@@ -22,3 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
       direction: 'right'
     });
   });
+
+
+// modals 
+const makeModal = modalSel => {
+	const modalEl = document.querySelector(modalSel + 'Popup');
+		btnEl = document.querySelector(modalSel + '__preview'),
+		closeEl = document.querySelector(modalSel + 'Cross')
+		closeBody = document.querySelector('.popup')
+		bg = document.querySelector(modalSel + 'Bg')
+		
+
+	btnEl.addEventListener('click', () => modalEl.classList.add('open'));
+	closeEl.addEventListener('click', () => modalEl.classList.remove('open'));
+	bg.addEventListener('click', () => modalEl.classList.remove('open'));
+}
+
+makeModal('#contact')

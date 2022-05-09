@@ -62,10 +62,10 @@ const slider = document.querySelector('.swiper-container');
 let mySwiper = new Swiper(slider, {
 	slidesPerView: 2,
 	spaceBetween: 50,
-  speed: 2000,
+  speed: 500,
   autoplay: {
     enabled: true,
-    delay: 5000,
+    delay: 3000,
   },
 	centeredSlides: true,
 	loop: true,

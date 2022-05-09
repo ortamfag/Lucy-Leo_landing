@@ -1,25 +1,9 @@
 .slider__item img 
     width: 100%
-    height: 700px
 
 .slider
     width: 100%
     padding: 0
-
-@media (max-width:1380px)
-    .slider__item img 
-        width: 100%
-        height: 650px
-
-@media (max-width: 1100px)
-    .slider__item img 
-        width: 100%
-        height: 590px
-
-@media (max-width: 950px)
-    .slider__item img 
-        width: 100%
-        height: 520px
 
 .second__slider
 
@@ -49,13 +33,15 @@
             display: flex
             flex-direction: column
             justify-content: center
-            align-items: center
+            align-items: flex-start
             background-color: $bgblue
+            padding-left: 30%
 
             & h2
                 font:
                     weight: $bold
                 color: $white
+                line-height: 100%
 
                 &:nth-child(1)
                     font-size: 80px
@@ -82,6 +68,7 @@
             weight: $medium
 
         margin-right: 150px
+        color: #4E4E4E
         
     & ul
         padding: 25px
@@ -90,10 +77,53 @@
         display: none
 
 
+@media (max-width: 1470px)
+
+    #first, #second, #third, #fourth
+        width: 10px !important
+        height: 10px !important
+        margin-right: 10px !important
+
+    .slider__control-first
+        width: 250px !important
+
+    #text
+        font-size: 18px !important
+
+@media (max-width: 1205px)
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 70px
+
+        & h2:nth-child(2)
+            font-size: 40px
+
+@media (max-width: 1090px)
+
+    #text
+        font-size: 16px !important
+
+    #indicators-1
+        width: 70% !important
+
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 60px
+
+        & h2:nth-child(2)
+            font-size: 30px
+
+    .slider__control-first
+        width: 150px !important
 @media (max-width: 870px)
     .mobile__slider-pic
         display: block
         background-color: $bgblue
+
+    .second__slider-1-left
+        padding: 5%
 
         & img
             width: 100%

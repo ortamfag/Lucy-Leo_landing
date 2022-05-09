@@ -10,6 +10,7 @@
         display: flex
         align-items: center
         margin: 10px auto
+        position: relative
 
         &-step
             border-radius: 50px
@@ -25,6 +26,8 @@
             align-items: center
             justify-content: center
             margin-right: 20px
+            position: absolute
+            left: -70px
 
             & p
                 color: $white
@@ -33,10 +36,9 @@
             color: $white
             display: flex
             flex-direction: column
-            padding: 15px 20px
             border-radius: 20px
             background-color: $red
-            padding: 10px 30px
+            padding: 20px 30px
             text-align: center
 
             min-width: 400px
@@ -71,11 +73,11 @@
 
     &__video
         display: flex
-        justify-content: center
+        justify-content: space-around
         align-items: center
 
         &-item 
-            margin-right: 50px
+            margin-right: 0px
             
             & video
                 border-radius: 40px
@@ -88,9 +90,11 @@
     .advantages
 
         &__item
+            position: static
             flex-direction: column
 
             &-step
+                position: static
                 margin-bottom: 20px
                 margin-right: 0px
 

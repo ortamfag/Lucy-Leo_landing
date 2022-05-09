@@ -6,16 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucy&Leo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
-    rel="stylesheet" />
-  <!-- ChiefSlider CSS -->
+  <!-- Slider CSS -->
   <link rel="stylesheet" href="src/css/chief-slider.min.css">
   <link rel="stylesheet" href="src/css/swiper.min.css">
-  <!-- ChiefSlider JavaScript -->
+  
+  <!-- Slider JavaScript -->
   <script src="src/js/chief-slider.min.js"></script>
   <script src="src/js/swiper.min.js"></script>
+
+  <!-- Morquee JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 
@@ -134,10 +133,10 @@
       </div>
       <!-- Кнопки для перехода к предыдущему и следующему слайду -->
        
-      <a href="#" class="slider__control slider__control-first" data-slide="prev"></a>
-      <a href="#" class="slider__control slider__control-first" data-slide="next"></a>
+      <div style="background-image: url('src/img/slider1/leftarrow.svg'); background-position: center center; margin-left: -100px;"href="#" id="arrow-1-1"class="slider__control slider__control-first" data-slide="prev"></div>
+      <div style="background-image: url('src/img/slider1/rightarrow.svg'); background-position: center center; margin-right: -100px;" id="arrow-1-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
 
-      <ul class="slider__indicators">
+      <ul id="indicators-1" class="slider__indicators">
         <li id="first" data-slide-to="0"></li>
         <li id="second" data-slide-to="1"></li>
         <li id="third" data-slide-to="2"></li>
@@ -720,8 +719,8 @@
           </div>
         </div>
         <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-        <a href="#" class="slider__control slider__control-second" data-slide="prev"></a>
-        <a href="#" class="slider__control slider__control-second" data-slide="next"></a>
+        <div style="background-image: url('src/img/slider2/leftarrow.svg'); background-position: center center; left: 0px; width: 280px;"href="#" id="arrow-2-1"class="slider__control slider__control-first" data-slide="prev"></div>
+        <div style="background-image: url('src/img/slider2/rightarrow.svg'); background-position: center center; right: 0px; width: 280px" id="arrow-2-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
 
       </div>
 

@@ -28,7 +28,7 @@
 
             & img
                 margin-bottom: 30px
-                width: 70%
+                
                 
 
             & h3
@@ -57,10 +57,10 @@
 
             & img
                 margin-bottom: 30px
-                width: 90%
+                width: auto
 
             & p
-                min-height: 120px
+                min-height: 200px
                 text-align: center
 
     &__teachers
@@ -68,9 +68,11 @@
         justify-content: space-between
         align-items: center
         margin-bottom: 50px
+        background-color: #f7f7f7
+        border-radius: 40px
+        padding: 30px
 
         & img
-            margin-right: 10px
             width: 30%
 
     &__families
@@ -83,10 +85,14 @@
         & img
             width: 100%
 
+@media (max-width: 1480px)
+    .benefit__material-item img
+        width: 90%
+
 
 @media (max-width: 1210px)
     .benefit__children-item img
-        width: 95%
+        width: 100%
 
     .benefit__material
         display: grid
@@ -115,7 +121,7 @@
             max-width: 100%
 
             & img
-                width: 50%
+                width: auto
 
     .benefit__material
         display: grid
@@ -125,7 +131,7 @@
         grid-template-columns: 100%
         
         & img
-            width: 65%
+            width: auto
             margin: 0 auto
 
 
@@ -133,16 +139,22 @@
     .benefit__children-item
 
         & img
-            width: 70%
+            width: auto
 
     .benefit__material
         display: grid
         grid-template-columns: 100%
 
+        &-item img
+            width: auto
+
+        &-item p
+            min-height: 0px
+
     .benefit__teachers
         
         & img
-            width: 90%
+            width: auto
             margin: 0 auto
 
     .benefit__families

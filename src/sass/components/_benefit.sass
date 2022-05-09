@@ -16,15 +16,15 @@
     &__children
         display: flex
         justify-content: space-between
-        align-items: center
+        align-items: flex-start
         margin-bottom: 50px
 
         &-item
             display: flex
             flex-direction: column
             align-items: center
-            max-width: 33%
-            margin-right: 5px
+            max-width: 30%
+            
 
             & img
                 margin-bottom: 30px
@@ -57,7 +57,7 @@
 
             & img
                 margin-bottom: 30px
-                width: 80%
+                width: 90%
 
             & p
                 min-height: 120px
@@ -82,3 +82,68 @@
 
         & img
             width: 100%
+
+
+@media (max-width: 1210px)
+    .benefit__children-item img
+        width: 95%
+
+    .benefit__material
+        display: grid
+        grid-template-columns: 33% 33% 33%
+        grid-gap: 20px
+
+        &-item
+            width: 100%
+
+    .benefit__teachers
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-gap: 20px
+
+        & img
+            width: 100%
+            margin: 0
+
+
+@media (max-width: 920px)
+    .benefit__children
+        flex-direction: column
+        align-items: center
+
+        &-item
+            max-width: 100%
+
+            & img
+                width: 50%
+
+    .benefit__material
+        display: grid
+        grid-template-columns: 50% 50%
+
+    .benefit__teachers
+        grid-template-columns: 100%
+        
+        & img
+            width: 65%
+            margin: 0 auto
+
+
+@media (max-width: 576px)
+    .benefit__children-item
+
+        & img
+            width: 70%
+
+    .benefit__material
+        display: grid
+        grid-template-columns: 100%
+
+    .benefit__teachers
+        
+        & img
+            width: 90%
+            margin: 0 auto
+
+    .benefit__families
+        display: none

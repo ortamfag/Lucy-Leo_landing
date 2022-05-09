@@ -70,3 +70,41 @@
         
     & ul
         padding: 25px
+
+.mobile__slider-pic
+        display: none
+
+
+@media (max-width: 870px)
+    .mobile__slider-pic
+        display: block
+        background-color: $bgblue
+
+        & img
+            width: 100%
+
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 50px
+            margin-top: 20px
+            margin-bottom: 10px
+
+        & h2:nth-child(2)
+            font-size: 30px
+            margin-bottom: 20px
+
+@media (max-width: 576px)
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 30px
+            
+
+        & h2:nth-child(2)
+            font-size: 20px
+            
+
+
+    
+

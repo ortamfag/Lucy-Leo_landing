@@ -72,4 +72,16 @@ let mySwiper = new Swiper(slider, {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+
+  breakpoints: {
+    830: {
+      slidesPerView: 2
+    },
+
+    320: {
+      slidesPerView: 1
+    }
+
+    
+  }
 })

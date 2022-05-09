@@ -75,9 +75,44 @@
         align-items: center
 
         &-item 
-            
             margin-right: 50px
             
             & video
                 border-radius: 40px
+                width: 20vw
+                height: calc(20vw * 1.37)
                 
+                
+
+@media (max-width: 620px)
+    .advantages
+
+        &__item
+            flex-direction: column
+
+            &-step
+                margin-bottom: 20px
+                margin-right: 0px
+
+        &__reactions h2
+            width: 100%
+
+        &__video
+            flex-direction: column
+
+            &-item
+                margin-right: 0
+                margin-bottom: 50px
+
+                & video
+                    width: 40vw
+                    height: calc(40vw * 1.37)
+
+@media (max-width: 500px)
+    .advantages__item-text
+        min-width: 0px
+
+@media (max-width: 400px)
+    .advantages__video-item video
+        width: 50vw
+        height: calc(50vw * 1.37)

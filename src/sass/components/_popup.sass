@@ -23,8 +23,8 @@
     &__content
         background-color: $white
         color: #000
-        max-width: 80%
-        padding: 50px 50px 0px 50px
+        max-width: 95%
+        padding: 25px 50px 0px 50px
         position: relative
         border-radius: 40px
 
@@ -36,28 +36,30 @@
         display: flex
         align-items: center
         margin-bottom: 30px
-        width: 80%
+        width: 50%
 
         & img
-            width: calc(100vh - 65vh) !important
+            width: auto !important
             height: 100% !important
             position: relative
             top: 30px
 
     &__text
 
-        margin-left: 5%
+        margin-left: 0%
         width: 100%
         padding-bottom: 25px
 
         & h2
             font:
-                size: calc(30px + 15 * (100vw / 1920))
+                size: calc(30px + 8 * (100vw / 1920))
                 weight: $bold
+
+            margin-bottom: 15px
 
         & p
             font:
-                size: calc(16px + 8 * (100vw / 1920))
+                size: calc(16px + 2 * (100vw / 1920))
                 weight: $medium
             color: #4E4E4E
             margin: 15px 0px !important
@@ -65,7 +67,7 @@
         & form
             background-color: #f7f7f7
             border-radius: 40px
-            padding: 15px 30px
+            padding: 10px 30px
             width: 80%
 
             & p
@@ -87,7 +89,7 @@
         & p:last-child
             font-size: 16px
             line-height: 25px
-            margin-top: 25px !important
+            margin-top: 20px !important
 
     &__close
         position: absolute
@@ -194,6 +196,9 @@ input[type="tel"]
     .popup__content
         max-width: 100%
 
+    .popup__text
+        margin-left: 5%
+
 @media (max-width: 996px)
     .popup
 
@@ -201,6 +206,7 @@ input[type="tel"]
             display: none
 
         &__text
+
 
             & h2
                 text-align: center

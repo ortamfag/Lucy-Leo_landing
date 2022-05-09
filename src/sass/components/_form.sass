@@ -9,10 +9,10 @@
         display: flex
         align-items: center
         
-        width: 100%
+        width: 50%
 
         & img
-            width: calc(100vh - 60vh)
+            width: auto
             height: 100%
 
     &__text
@@ -25,7 +25,8 @@
             font:
                 size: 45px
                 weight: $bold
-            margin-bottom: 20px
+            margin-bottom: 15px
+            line-height: 100% 
 
         & p
             font:
@@ -34,12 +35,13 @@
             color: #4E4E4E
             margin: 15px 0px 
             line-height: 34px
+                
 
         & form
             background-color: #f7f7f7
             border-radius: 40px
-            padding: 15px 20px
-            width: 100%
+            padding: 25px 10%
+            width: 40vw
 
             & p
                 font:
@@ -68,7 +70,10 @@
         & p:last-child
             font-size: 16px
             line-height: 26px
+            margin-top: 50px
 
+#form-subtitle
+    margin: 40px 0px
 
 
 input[type="email"], input[type="number"], input[type="tel"], input[type='text']
@@ -179,9 +184,20 @@ input[type="tel"]
         & form
             margin-top: 15px
 
-@media (max-width: 1165px)
+@media (max-width: 1240px)
+    .form__text
+        width: 50%
+
     .form
         padding: 0 5%
+
+@media (max-width: 1045px)
+    .form__title
+        width: 70%
+
+        & img
+            width: 100%
+
 
 @media (max-width: 1300px)
     .form__content
@@ -194,6 +210,8 @@ input[type="tel"]
             display: none
 
         &__text
+
+            width: 100%
 
             & h2
                 text-align: center

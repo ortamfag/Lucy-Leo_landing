@@ -14,57 +14,57 @@
 </head>
 
 <body>
-  <div class="fixed active" id="fixed">
+  <div class="fixed active-f" id="fixed">
     <div class="fixed__inner">
       
       <img src="src/img/LucyLeo.svg" />
       <p>Become a partner to resell our brand or contract manufacturing</p>
     </div>
     <button id="contact__preview">Contact us</button>
+  </div>
 
-    <div id="contactPopup" class="popup">
-      <div id="contactBg" class="bg"></div>
-      <div class="popup__body">
-        <div class="popup__content">
-          <a id="contactCross" class="popup__close"><img src="src/img/close.svg" alt="закрыть"></a>
+  <div id="contactPopup" class="popup">
+    <div id="contactBg" class="bg"></div>
+    <div class="popup__body">
+      <div class="popup__content">
+        <a id="contactCross" class="popup__close"><img src="src/img/close.svg" alt="закрыть"></a>
 
-          <div class="popup__wrapper">
-            <div class="popup__title">
-              <img src="src/img/popup700.png">
-            </div>
-            <div class="popup__text">
-              <h2>Have more questions?</h2>
-              <h2>Want to cooperate?</h2>
-              <p>Take the first step towards become a partner by filling
-                out this form. We will be glad to meet you and start
-                negotiations.</p>
+        <div class="popup__wrapper">
+          <div class="popup__title">
+            <img src="src/img/popup700.png">
+          </div>
+          <div class="popup__text">
+            <h2>Have more questions?</h2>
+            <h2>Want to cooperate?</h2>
+            <p id="popup-subtitle">Take the first step towards become a partner by filling
+              out this form. We will be glad to meet you and start
+              negotiations.</p>
 
-              <form>
-                <p>Please, introduce yourself:</p>
-                <input type="text" placeholder="Your name">
+            <form>
+              <p>Please, introduce yourself:</p>
+              <input type="text" placeholder="Your name">
 
-                <p>How to contact you:</p>
-                <input placeholder="E-mail" type="email">
-                <div class="popup__text-form">
-                  <input placeholder="+0000" type="number">
-                  <input placeholder="Phone number" type="tel">
-                </div>
+              <p>How to contact you:</p>
+              <input placeholder="E-mail" type="email">
+              <div class="popup__text-form">
+                <input placeholder="+0000" type="number">
+                <input placeholder="Phone number" type="tel">
+              </div>
 
-                <div class="popup__checkbox">
-                  <input type="checkbox" id="checkbox-id-p">
-                  <label for="checkbox-id-p">I agree to the processing of personal data</label>
-                </div>
+              <div class="popup__checkbox">
+                <input type="checkbox" id="checkbox-id-p">
+                <label for="checkbox-id-p">I agree to the processing of personal data</label>
+              </div>
 
-                <button type="submit">Send</button>
-              </form>
+              <button type="submit">Send</button>
+            </form>
 
-              <p>Filling out the form is a way to become a partner — but
-                not the only way. There is always a chance for a normal
-                human conversation. If you have questions, reach out
-                to Vitali Kirka, Head of Export relationships. You can
-                email Vitali at <span>vkirka@lucyandleo.eu</span> — or simply
-                message him on <span>LinkedIn.</span></p>
-            </div>
+            <p id="popup-footer">Filling out the form is a way to become a partner — but
+              not the only way. There is always a chance for a normal
+              human conversation. If you have questions, reach out
+              to Vitali Kirka, Head of Export relationships. You can
+              email Vitali at <span>vkirka@lucyandleo.eu</span> — or simply
+              message him on <span>LinkedIn.</span></p>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
       <div style="background-image: url('src/img/slider1/leftarrow.svg'); background-position: center center; margin-left: -100px;"href="#" id="arrow-1-1"class="slider__control slider__control-first" data-slide="prev"></div>
       <div style="background-image: url('src/img/slider1/rightarrow.svg'); background-position: center center; margin-right: -100px;" id="arrow-1-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
 
-      <ul id="indicators-1" class="slider__indicators">
+      <ul style="bottom: 60px !important" id="indicators-1" class="slider__indicators">
         <li id="first" data-slide-to="0"></li>
         <li id="second" data-slide-to="1"></li>
         <li id="third" data-slide-to="2"></li>
@@ -529,8 +529,13 @@
         <div class="email__wrapper-inner">
           <p><span>Get our E-Catalog for 2022</span> with latest toys,
             we will email it to you in less than 15 seconds.</p>
-
-          <input type="email" placeholder="Your email">
+            
+          <div class="email__wrapper-input">
+            <input type="email" placeholder="Your email">
+            <button type="submit">
+              Get E-catalog
+            </button>
+          </div>
 
           <div class="email__checkbox">
             <input type="checkbox" id="checkbox-id">
@@ -538,11 +543,7 @@
           </div>
         </div>
 
-        <div class="email__wrapper-button">
-          <button type="submit">
-            Get E-catalog
-          </button>
-        </div>
+        
       </div>
     </section>
 

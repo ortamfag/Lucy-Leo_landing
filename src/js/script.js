@@ -110,11 +110,11 @@ function opacity() {
 
   else
     if (window.pageYOffset > 18500) {
-      fixed.classList.remove('active')
+      fixed.classList.remove('active-f')
     }
 
     else{
-      fixed.classList.add('active')
+      fixed.classList.add('active-f')
     }
 
   

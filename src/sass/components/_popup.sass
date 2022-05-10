@@ -10,6 +10,7 @@
     overflow-x: hidden
     overflow-y: auto
     transition: all 0.5s ease 0s
+    z-index: 901
 
     &__body
         min-height: 100%
@@ -46,7 +47,7 @@
 
     &__text
 
-        margin-left: 0%
+        margin-left: 5%
         width: 100%
         padding-bottom: 25px
 
@@ -63,22 +64,34 @@
                 weight: $medium
             color: #4E4E4E
             margin: 15px 0px !important
+            
 
         & form
             background-color: #f7f7f7
             border-radius: 40px
             padding: 10px 30px
-            width: 80%
+            width: 60%
 
             & p
                 font:
                     size: 16px
                     weight: $bold
+                margin-left: 35px !important
 
             & button
                 background: $red !important
                 text-transform: uppercase
                 margin-top: 20px
+                margin-bottom: 30px
+                min-width: 150px
+                padding: 10px 15px
+                border: 0px
+                border-radius: 20px
+                color: $white
+                cursor: pointer
+                font-weight: $bold
+                font-size: calc(15px + 9 * (100vw / 1920))
+                
 
         &-form
             display: flex
@@ -124,6 +137,7 @@ input[type="email"], input[type="number"], input[type="tel"], input[type='text']
     outline: none
     font-family: $font
     text-indent: 15px
+    font-size: 16px
 
 input[type='text']
     width: 100%
@@ -180,6 +194,14 @@ input[type="tel"]
         background: $red
         color: $red
 
+#popup-subtitle
+    margin: 25px 0px !important
+    width: 50%
+
+#popup-footer
+    margin: 25px 0px !important
+    width: 60%
+
 @media (max-width: 1500px)
     .popup__text 
         
@@ -192,12 +214,41 @@ input[type="tel"]
         & form
             margin-top: 15px
 
-@media (max-width: 1300px)
+    #popup-subtitle
+        width: 70%
+    #popup-footer
+        width: 70%
+
+@media (max-width: 1310px)
     .popup__content
         max-width: 100%
 
     .popup__text
         margin-left: 5%
+
+        & form
+            width: 70%
+
+    #popup-subtitle
+        width: 80%
+    #popup-footer
+        width: 80%
+
+@media (max-width: 1200px)
+    #popup-subtitle
+        width: 100%
+    #popup-footer
+        width: 100%
+
+    .popup__text form
+        width: 80%
+
+@media (max-width: 1050px)
+    .popup__text
+        margin-left: 8%
+    
+    .popup__text form
+        width: 100%
 
 @media (max-width: 996px)
     .popup
@@ -208,8 +259,6 @@ input[type="tel"]
         &__text
 
 
-            & h2
-                text-align: center
 
             & p
                 text-align: center
@@ -223,6 +272,9 @@ input[type="tel"]
                     justify-content: center
                     align-items: center
                     margin: 20px auto 0px auto
+
+                
+
 
 @media (max-width: 620px)
     .popup

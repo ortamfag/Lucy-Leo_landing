@@ -1,5 +1,6 @@
+
 .form
-    padding: $grid
+    padding: 0px 10% 0px 10%
     
     &__wrapper
         display: flex
@@ -35,6 +36,7 @@
             color: #4E4E4E
             margin: 15px 0px 
             line-height: 34px
+            width: 80%
                 
 
         & form
@@ -72,9 +74,10 @@
             font-size: 16px
             line-height: 26px
             margin-top: 50px
+            margin-bottom: 50px
 
 #form-subtitle
-    margin: 40px 0px
+    margin: 35px 0px 45px 0px !important
 
 
 input[type="email"], input[type="number"], input[type="tel"], input[type='text']
@@ -177,7 +180,7 @@ input[type="tel"]
     .form__text 
         
         & p
-            margin: 10px 0px !important
+            margin: 40px 0px !important
 
             &:last-child
                 margin-top: 15px !important
@@ -186,12 +189,19 @@ input[type="tel"]
         & form
             margin-top: 15px
 
+
+    #form-subtitle
+        margin: 35px 0px 45px 0px !important
+
 @media (max-width: 1240px)
     .form__text
         width: 50%
 
     .form
         padding: 0 5%
+
+        &__text p
+            width: 100%
 
 @media (max-width: 1045px)
     .form__title
@@ -220,6 +230,7 @@ input[type="tel"]
 
             & p
                 margin: 15px 0px 15px 35px !important
+                width: 100%
 
             & form
                 width: 100%
@@ -229,9 +240,6 @@ input[type="tel"]
                     justify-content: center
                     align-items: center
                     margin: 20px auto 0px auto
-
-input[type="email"], input[type="number"], input[type="tel"], input[type='text']
-    font-size: 14px !important
 
 @media (max-width: 620px)
     .form
@@ -314,8 +322,5 @@ input[type="email"], input[type="number"], input[type="tel"], input[type='text']
         width: 100% !important
         margin-bottom: 10px !important
         margin-right: 0 !important
-
-    input[type="email"], input[type="number"], input[type="tel"], input[type='text']
-        font-size: 12px !important
 
 

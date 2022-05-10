@@ -47,6 +47,7 @@
                 font:
                     size: 16px
                     weight: $bold
+                margin-left: 35px !important
 
             & button
                 background: $red !important
@@ -84,6 +85,7 @@ input[type="email"], input[type="number"], input[type="tel"], input[type='text']
     outline: none
     font-family: $font
     text-indent: 15px
+    font-size: 16px !important
 
 input[type='text']
     width: 100%
@@ -217,8 +219,7 @@ input[type="tel"]
                 text-align: center
 
             & p
-                text-align: center
-                margin: 15px 0px !important
+                margin: 15px 0px 15px 35px !important
 
             & form
                 width: 100%
@@ -228,6 +229,9 @@ input[type="tel"]
                     justify-content: center
                     align-items: center
                     margin: 20px auto 0px auto
+
+input[type="email"], input[type="number"], input[type="tel"], input[type='text']
+    font-size: 14px !important
 
 @media (max-width: 620px)
     .form
@@ -262,11 +266,16 @@ input[type="tel"]
                 margin-top: 10px
                 padding: 10px 30px
 
+                & p
+                    margin-left: 25px !important
+
         &__checkbox label
             line-height: 0px
 
     input[type="email"], input[type="number"], input[type="tel"], input[type='text']
         padding: 10px !important
+
+       
 
 @media (max-width: 460px)
     .form
@@ -305,5 +314,8 @@ input[type="tel"]
         width: 100% !important
         margin-bottom: 10px !important
         margin-right: 0 !important
+
+    input[type="email"], input[type="number"], input[type="tel"], input[type='text']
+        font-size: 12px !important
 
 

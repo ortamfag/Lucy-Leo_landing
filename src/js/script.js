@@ -90,3 +90,35 @@ let mySwiper = new Swiper(slider, {
     
   }
 })
+
+
+const fixed = document.querySelector('#fixed')
+
+function opacity() {
+
+  if (window.innerWidth >= 550) {
+  
+    if (window.pageYOffset > 7500) {
+      fixed.classList.remove('active')
+    }
+
+    else{
+      fixed.classList.add('active')
+    }
+
+  }
+
+  else
+    if (window.pageYOffset > 18500) {
+      fixed.classList.remove('active')
+    }
+
+    else{
+      fixed.classList.add('active')
+    }
+
+  
+}
+
+window.onscroll=opacity
+opacity()

@@ -138,6 +138,16 @@
                 display: flex
                 margin: 0 auto
 
+@media (max-width: 985px)
+    .benefit__material
+        display: grid
+        grid-template-columns: 50% 50%
+
+        &-item
+            
+            & img
+                width: auto
+
 @media (max-width: 920px)
     .benefit__children
         flex-direction: column
@@ -146,15 +156,6 @@
         &-item
             max-width: 100%
 
-            & img
-                width: auto
-
-    .benefit__material
-        display: grid
-        grid-template-columns: 50% 50%
-
-        &-item
-            
             & img
                 width: auto
 

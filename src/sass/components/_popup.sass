@@ -60,7 +60,7 @@
 
         & p
             font:
-                size: calc(16px + 2 * (100vw / 1920))
+                size: calc(19px + 2 * (100vw / 1920))
                 weight: $medium
             color: #4E4E4E
             margin: 15px 0px !important
@@ -69,7 +69,7 @@
         & form
             background-color: #f7f7f7
             border-radius: 40px
-            padding: 10px 30px
+            padding: 20px 35px
             width: 70%
 
             & p
@@ -97,7 +97,7 @@
             display: flex
             justify-content: space-between
             align-items: center
-            margin-top: 30px
+            margin-top: 15px
 
         & p:last-child
             font-size: 16px
@@ -107,7 +107,7 @@
     &__close
         position: absolute
         right: 25px
-        top: 10px
+        top: 20px
         cursor: pointer
         
         & img
@@ -130,7 +130,7 @@
 
 
 input[type="email"], input[type="number"], input[type="tel"], input[type='text']
-    padding: 20px
+    padding: 16px
     background-color: $white
     border: 0px
     border-radius: 20px
@@ -148,13 +148,14 @@ input[type="email"]
 input[type="number"]
     width: 40%
     margin-right: 5%
+    text-indent: 40px
 
 input[type="tel"]
     width: 60%
 
 .popup__checkbox
 
-    margin-top: 30px
+    margin-top: 20px
 
     & input[type="checkbox"]
         display: none
@@ -188,7 +189,7 @@ input[type="tel"]
         vertical-align: middle
 
     & input:checked + label:before
-        content: url('../img/check.svg')
+        content: '✔'
 
     & input:disabled + label:before
         background: $red
@@ -202,6 +203,9 @@ input[type="tel"]
     margin: 25px 0px !important
     width: 70%
 
+#popup-contact
+    margin-top: 30px !important
+
 @media (max-width: 1700px)
 
     #popup-subtitle
@@ -213,7 +217,7 @@ input[type="tel"]
         width: 100%
 
     .popup__text form
-        width: 75%
+        width: 80%
 
 
 @media (max-width: 1500px)
@@ -229,9 +233,9 @@ input[type="tel"]
             margin-top: 15px
 
     #popup-subtitle
-        width: 70%
+        width: 95%
     #popup-footer
-        width: 70%
+        width: 79%
 
     .popup__content
         max-width: 85%

@@ -34,7 +34,7 @@
                 size: 24px
                 weight: $medium
             color: #4E4E4E
-            margin: 15px 0px 
+            margin: 10px 0px 
             line-height: 34px
             width: 80%
                 
@@ -42,8 +42,8 @@
         & form
             background-color: #f7f7f7
             border-radius: 40px
-            padding: 25px 30px
-            width: 30vw
+            padding: 25px 35px 25px 50px
+            width: 35vw
 
             & p
                 font:
@@ -51,10 +51,15 @@
                     weight: $bold
                 margin-left: 35px !important
 
+                &:nth-child(3)
+                    margin-top: 25px
+                    
+
             & button
                 background: $red !important
                 text-transform: uppercase
-                margin-top: 30px
+                margin-top: 20px
+                margin-bottom: 20px
                 min-width: 150px
                 padding: 10px 15px
                 border: 0px
@@ -68,7 +73,7 @@
             display: flex
             justify-content: space-between
             align-items: center
-            margin-top: 30px
+            margin-top: 10px
 
         & p:last-child
             font-size: 16px
@@ -98,14 +103,14 @@ input[type="email"]
 
 input[type="number"]
     width: 40%
-    margin-right: 5%
+    margin-right: 3%
 
 input[type="tel"]
     width: 60%
 
 .form__checkbox
 
-    margin-top: 30px
+    margin-top: 20px
 
     & input[type="checkbox"]
         display: none
@@ -139,7 +144,7 @@ input[type="tel"]
         vertical-align: middle
 
     & input:checked + label:before
-        content: url('../img/check.svg')
+        content: '✔'
 
     & input:disabled + label:before
         background: $red
@@ -148,7 +153,7 @@ input[type="tel"]
 .slider__indicators
     background-color: #FFFFFF !important
     border-radius: 40px !important
-    width: 54% !important
+    width: 60% !important
     padding: 27px
     bottom: 50px !important
     justify-content: flex-start !important
@@ -181,14 +186,17 @@ input[type="tel"]
         padding: 0px 10% 0px 15%
     
 @media (max-width: 1500px)
+
+    #form-subtitle
+        width: 100%
     .form__text 
         
         & p
 
-            width: 100%
+            width: 75%
 
             &:last-child
-                margin-top: 15px !important
+                margin-top: 45px !important
                 padding-bottom: 20px
 
         & form
@@ -197,7 +205,7 @@ input[type="tel"]
 
 
     #form-subtitle
-        margin: 25px 0px 25px 0px !important
+        margin: 35px 0px 45px 0px !important
 
 @media (max-width: 1460px)
     .form
@@ -206,13 +214,16 @@ input[type="tel"]
         &__text form
             width: 40vw
 
+    .slider__indicators
+        width: 50% !important
+
 @media (max-width: 1350px)
     .form__text
         width: 70%
         margin-left: 75px
 
         & form
-            width: 35vw
+            width: 37vw
 
     .form
         padding: 0 5%
@@ -249,8 +260,9 @@ input[type="tel"]
     .form
         padding: 0 1%
 
-@media (max-width: 1020px)
+@media (max-width: 1045px)
     .form
+        padding: 0px 15%
 
         &__title
             display: none
@@ -258,6 +270,7 @@ input[type="tel"]
         &__text
 
             width: 100%
+            margin-left: 0
 
             & h2
                 text-align: center
@@ -274,6 +287,9 @@ input[type="tel"]
                     justify-content: center
                     align-items: center
                     margin: 20px auto 0px auto
+
+    #form-subtitle
+        text-align: center
 
 @media (max-width: 620px)
     .form

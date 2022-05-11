@@ -24,7 +24,7 @@
     &__content
         background-color: $white
         color: #000
-        max-width: 95%
+        max-width: 70%
         padding: 25px 50px 0px 50px
         position: relative
         border-radius: 40px
@@ -47,7 +47,7 @@
 
     &__text
 
-        margin-left: 5%
+        margin-left: 120px
         width: 100%
         padding-bottom: 25px
 
@@ -70,7 +70,7 @@
             background-color: #f7f7f7
             border-radius: 40px
             padding: 10px 30px
-            width: 60%
+            width: 70%
 
             & p
                 font:
@@ -196,11 +196,25 @@ input[type="tel"]
 
 #popup-subtitle
     margin: 25px 0px !important
-    width: 50%
+    width: 70%
 
 #popup-footer
     margin: 25px 0px !important
-    width: 60%
+    width: 70%
+
+@media (max-width: 1700px)
+
+    #popup-subtitle
+        margin: 25px 0px !important
+        width: 100%
+
+    #popup-footer
+        margin: 25px 0px !important
+        width: 100%
+
+    .popup__text form
+        width: 75%
+
 
 @media (max-width: 1500px)
     .popup__text 
@@ -219,12 +233,15 @@ input[type="tel"]
     #popup-footer
         width: 70%
 
+    .popup__content
+        max-width: 85%
+
 @media (max-width: 1310px)
     .popup__content
         max-width: 100%
 
     .popup__text
-        margin-left: 5%
+        margin-left: 100px
 
         & form
             width: 70%
@@ -243,9 +260,9 @@ input[type="tel"]
     .popup__text form
         width: 80%
 
-@media (max-width: 1050px)
+@media (max-width: 1080px)
     .popup__text
-        margin-left: 8%
+        margin-left: 110px
     
     .popup__text form
         width: 100%
@@ -259,7 +276,7 @@ input[type="tel"]
         &__text
             margin-left: 0%
             & p
-                text-align: center
+                
                 margin: 15px 0px !important
 
             & h2

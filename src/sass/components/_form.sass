@@ -175,6 +175,10 @@ input[type="tel"]
         weight: $medium
     color: $red
     margin-left: 10px
+
+@media (max-width: 1650px)
+    .form
+        padding: 0px 10% 0px 15%
     
 @media (max-width: 1500px)
     .form__text 
@@ -189,14 +193,18 @@ input[type="tel"]
 
         & form
             margin-top: 15px
+            width: 35vw
 
 
     #form-subtitle
         margin: 25px 0px 25px 0px !important
 
-@media (max-width: 1435px)
+@media (max-width: 1460px)
     .form
         padding: 0 10%
+
+        &__text form
+            width: 40vw
 
 @media (max-width: 1350px)
     .form__text
@@ -208,6 +216,13 @@ input[type="tel"]
 
     .form
         padding: 0 5%
+
+@media (max-width: 1265px)
+    .form__text
+        
+
+        & form
+            width: 45vw
 
 
 @media (max-width: 1120px)
@@ -234,7 +249,7 @@ input[type="tel"]
     .form
         padding: 0 1%
 
-@media (max-width: 996px)
+@media (max-width: 1020px)
     .form
 
         &__title

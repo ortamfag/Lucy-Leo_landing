@@ -104,6 +104,18 @@ input[type="email"]
 input[type="number"]
     width: 40%
     margin-right: 3%
+    appearance: textfield
+
+.form__text-form::before
+    content: '+'
+    position: absolute
+    margin-left: 15px
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+	display: none
+
+
 
 input[type="tel"]
     width: 60%

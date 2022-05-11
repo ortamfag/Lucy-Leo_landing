@@ -1,7 +1,7 @@
 .benefit
     padding: $grid
-    margin-top: 50px
-    margin-bottom: 50px
+    margin-top: 45px
+    margin-bottom: 45px
     
     &__wrapper
 
@@ -10,14 +10,14 @@
                 size: 24px
                 weight: $medium
             text-align: center
-            margin: 0px auto 50px auto
+            margin: 0px auto 45px auto
 
 
     &__children
         display: flex
         justify-content: space-between
         align-items: flex-start
-        margin-bottom: 50px
+        margin-bottom: 45px
 
         &-item
             display: flex
@@ -46,7 +46,7 @@
         display: flex
         justify-content: space-between
         align-items: flex-start
-        margin-bottom: 50px
+        margin-bottom: 45px
 
         &-item
             display: flex
@@ -66,29 +66,39 @@
 
     &__teachers
         display: grid
-        grid-template-columns: 30% 30% 30%
-        justify-content: space-between
+        grid-template-columns: 33% 33% 33%
+        justify-content: space-around
         align-items: center
-        margin-bottom: 50px
+        margin-bottom: 45px
         background-color: #f7f7f7
         border-radius: 40px
         padding: 30px
 
         & img
-            width: 100%
+            width: auto
+            margin: 0 auto
 
     &__families
         background: url('../img/grey_bg.png') no-repeat
         background-size: 100% 70%
         background-position: 0px 50px 
         width: 100%
-        margin-bottom: 50px
+        margin-bottom: 45px
 
         & img
             width: 100%
 
         &-mobile
             display: none
+
+@media (max-width: 1700px)
+    .benefit__teachers
+        grid-template-columns: 30% 30% 30%
+        
+
+    .benefit__teachers img
+        width: 100%
+        margin: 0
 
 @media (max-width: 1480px)
     .benefit__material-item img

@@ -820,7 +820,7 @@
             out this form. We will be glad to meet you and start
             negotiations.</p>
 
-          <form>
+          <form id="unsuccessful" class="unsuccessful view">
             <p>Please, introduce yourself:</p>
             <input type="text" placeholder="Your name">
 
@@ -836,7 +836,15 @@
               <label for="checkbox-id-footer">I agree to the processing of personal data</label>
             </div>
 
-            <button type="submit">Send</button>
+            <button id="button-form" type="button">Send</button>
+          </form>
+
+          <form id="successful" class="successful notview">
+            <p style="margin-left: 0px !important">The form has been successfully<br> processed. This means that our team will<br> get in touch very soon.</p>
+
+            <img src="src/img/form-check.png">
+            
+            <p style="margin-left: 0px !important">Meanwhile, follow <a href="https://www.linkedin.com/in/vitali-kirka-76299127/">our page on LinkedIn</a><br>- and we'll keep you posted with <br> Lucy&Leo news and insights.</p>
           </form>
 
           <p>Filling out the form is a way to become a partner — but
@@ -891,6 +899,7 @@
   <!-- Morquee JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+  
   <script src="src/js/script.js"></script>
 
 </body>

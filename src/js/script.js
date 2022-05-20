@@ -122,3 +122,13 @@ function opacity() {
 
 window.onscroll=opacity
 opacity()
+
+
+const buttonForm = document.querySelector('#button-form')
+const check = document.querySelector('#successful')
+const uncheck = document.querySelector('#unsuccessful')
+
+buttonForm.addEventListener('click', () => uncheck.classList.add('notview'))
+buttonForm.addEventListener('click', () => uncheck.classList.remove('view'))
+buttonForm.addEventListener('click', () => check.classList.remove('notview'))
+buttonForm.addEventListener('click', () => check.classList.add('view'))

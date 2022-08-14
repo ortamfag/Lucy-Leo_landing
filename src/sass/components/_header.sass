@@ -1,115 +1,43 @@
 .header
     padding: $grid
-    padding-top: 45px
+    padding-top: 80px
+    background-image: url('../img/bg.png')
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-position: center center
 
-    & h1
-        font:
-            size: calc(25px + 20 * (100vw / 1920))
-            weight: $bold
-
-        text-align: center
-        margin: 0 auto
-        margin-bottom: 40px
-        margin-top: 80px
-        max-width: 850px
-
-
-    & p
-        font:
-            weight: $medium
-            size: calc(16px + 8 * (100vw / 1920))
-        text-align: center
-        margin-bottom: 10px
-
-
-    &__inner
+    &__wrapper
         display: flex
-        align-items: flex-start
-        justify-content: space-around
-        margin-top: 50px
-        
-    &__item
-        display: flex
+        justify-content: space-between
         align-items: center
-        flex-direction: column
-        width: 33%
-        margin-right: 5%
-        
-        & img
-            height: 100px
 
-        & h2
-            font:
-                size: 24px
-                weight: $bold
-            text-align: center
-            min-height: 90px
-            max-width: 260px
-            margin-top: 30px
-            margin-bottom: 10px
+    &__text
+        width: 50%
 
-            display: flex
-            align-items: center
+        &-title
+            font-size: 34px
+            margin-bottom: 20px
 
-        & p
-            font: 
-                size: 16px
-                weight: $medium
-            text-align: center
-            min-height: 70px
-            margin-bottom: 45px
+            & span
+                color: #e32535
 
-.mobile__header-pic
-    display: none
+        &-list
+            display: grid
+            grid-template-columns: 50% 50%
+            grid-gap: 20px
 
+            &-item
 
-@media (max-width: 870px)
-    .header
+                & h2
+                    font-size: 16px
+                    font-weight: $bold
+                    font-family: $font
 
-        &__inner
-            flex-direction: column
-            align-items: center
-        
-        &__item
-            width: 100%
-            margin-right: 0
+                & p
+                    font-size: 16px
+                    font-weight: $medium
+                    font-family: $font
 
-            & h2
-                max-width: 100%
-                margin: 25px 0px
-                min-height: 0px
-
-            & p
-                font-size: 18px
-                margin-bottom: 25px
-
-            & img
-                height: 115px
-
-    .desktop
-        display: none
-
-    .mobile__header-pic
-        display: block
-
-        & img
-            width: 90%
-            display: flex
-            margin: 0 auto
-
-        & h2
-            text-align: center
-            margin: 20px 5px
-
-        & iframe
-            width: 90%
-            height: 35vh
-            display: flex
-            margin: 0 auto
-
-@media (max-width: 550px)
-
-    .header h1
-        margin-top: 0px
-
-    
+    &__img
+        width: 50%
+        text-align: right

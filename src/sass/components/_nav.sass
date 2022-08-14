@@ -1,0 +1,84 @@
+@keyframes shine2 
+  0% 
+    opacity: 0
+  100%
+    opacity: 1
+
+.nav
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 60px 
+
+    &__logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        & img
+            width: 88px
+            height: 100px
+            margin-right: 25px
+
+        &-text
+
+            & h2
+                font-family: $font
+                font-weight: $bold
+                font-size: 24px
+
+            & p
+                text-align: left !important
+                font-size: 16px
+                margin-bottom: 0px
+
+    &__link
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        & p
+            margin-right: 50px
+            font-size: 16px
+            font-family: $font
+            font-weight: $medium
+
+
+            &:nth-last-child
+                margin-right: 0px
+
+    &__aside
+        text-align: right
+
+        & li
+            color: #4e4e4e
+            font-family: $font
+            font-weight: $medium
+            font-size: 16px
+            list-style-type: none
+            margin-bottom: 5px
+            line-height: normal
+
+            &::before
+                content: ''
+                display: inline-block
+                width: 7px
+                height: 7px
+                margin-right: 5px
+                background-color: #1ed300
+                border-radius: 100%
+                animation: shine2 1s cubic-bezier(1, 0, 0, 1) infinite
+
+        & h2
+            font-family: $font
+            font-weight: $bold
+            font-size: 24px
+            margin-bottom: 5px
+            color: #4e4e4e
+            line-height: normal
+
+            &:last-child
+                font-size: 16px
+
+

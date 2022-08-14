@@ -22,7 +22,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src('assets/sass/*.+(scss|sass)')
+    return gulp.src('src/sass/*.+(scss|sass)')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({
             prefix: "",
@@ -30,7 +30,7 @@ gulp.task('styles', function() {
           }))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
 });
 
@@ -80,13 +80,13 @@ gulp.task('styles', function() {
 // });
 
 gulp.task('watch', function() {
-    gulp.watch('assets/sass/*.+(scss|sass)', gulp.parallel('styles'))
-    gulp.watch('assets/sass/components/*.+(scss|sass)', gulp.parallel('styles')).on('change', browserSync.reload)
+    gulp.watch('src/sass/*.+(scss|sass)', gulp.parallel('styles'))
+    gulp.watch('src/sass/components/*.+(scss|sass)', gulp.parallel('styles')).on('change', browserSync.reload)
     // gulp.watch('assets/jade/*.jade', gulp.parallel('jade'))
     // gulp.watch('assets/jade/pages/*.jade', gulp.parallel('jade-any'))
     // gulp.watch('assets/js/*.js', gulp.parallel('scriptsMain'))
     // gulp.watch('assets/img/*.+(jpg|png|gif)', gulp.parallel('img'));
-    gulp.watch('assets/img/*.+(png|jpg|jpeg|webp|svg').on('change', browserSync.reload);
+    gulp.watch('src/img/*.+(png|jpg|jpeg|webp|svg').on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 

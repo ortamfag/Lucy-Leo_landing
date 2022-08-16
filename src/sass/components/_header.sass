@@ -1,7 +1,8 @@
 .header
     padding: $grid
-    padding-top: 80px
-    background-image: url('../img/bg.png')
+    padding-bottom: 80px
+    padding-top: 30px
+    background-image: url('../img/bg-1.svg')
     background-repeat: no-repeat
     background-size: 100% 100%
     background-position: center center
@@ -25,6 +26,7 @@
             grid-gap: 20px
 
             &-item
+                width: 100%
 
                 & h2
                     font-size: 16px
@@ -80,20 +82,17 @@
     &__img
         text-align: right
 
+        & video
+            height: calc(20vw * 1.37)
+            width: 22vw
+            border-radius: 40px
+
 
 @media (max-width: 1660px)
-    .header__wrapper
-        flex-direction: column
-
     .header__text
-
-        & h1
-            text-align: center
 
         &-list
             grid-template-columns: 50% 50%
-            justify-content: center
-            justify-items: center
 
         &-buttons
             justify-content: center
@@ -103,7 +102,12 @@
 
     .header__img
         text-align: center
-        margin-top: 50px
+
+@media (max-width: 1500px)
+    .header
+        padding: $grid1440
+        padding-bottom: 170px
+        padding-top: 30px
 
 @media (max-width: 1065px)
     .header__text-buttons
@@ -128,7 +132,7 @@
                 & p
                     text-align: center
 
-    .header__img img
+    .header__img video
         max-width: 100%
 
 @media (max-width: 670px)

@@ -39,21 +39,21 @@ const makeModal = modalSel => {
 }
 
 makeModal('#contact')
-makeModal('#first')
-makeModal('#second')
+makeModal('#wholesale')
+makeModal('#manufacture')
 
 
-const first = document.querySelector('#first')
-const second = document.querySelector('#second')
-const third = document.querySelector('#third')
-const fourth = document.querySelector('#fourth')
+// const first = document.querySelector('#first')
+// const second = document.querySelector('#second')
+// const third = document.querySelector('#third')
+// const fourth = document.querySelector('#fourth')
 
 
 
-first.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Tallinn, Estonia")
-second.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Kaunas, Lithuania")
-third.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at Spielwarenmesse Toy Fair 2020, Germany")
-fourth.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at China Toy Expo Toy Fair 2019, Shanghai")
+// first.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Tallinn, Estonia")
+// second.addEventListener('transitionstart', () => text.innerHTML="Retail chain in Kaunas, Lithuania")
+// third.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at Spielwarenmesse Toy Fair 2020, Germany")
+// fourth.addEventListener('transitionstart', () => text.innerHTML="Lucy&Leo at China Toy Expo Toy Fair 2019, Shanghai")
 
 
 
@@ -91,33 +91,61 @@ let mySwiper = new Swiper(slider, {
   }
 })
 
-
 const fixed = document.querySelector('#fixed')
 
 function opacity() {
 
-  if (window.innerWidth >= 550) {
-  
-    if (window.pageYOffset > 7500) {
-      fixed.classList.remove('active-f')
-    }
-
-    else{
-      fixed.classList.add('active-f')
-    }
-
+  //1200
+  if(innerWidth >= 1200 && window.pageYOffset > 500) {
+    fixed.classList.add('active-f')
   }
 
-  else
-    if (window.pageYOffset > 18500) {
-      fixed.classList.remove('active-f')
-    }
+  if(innerWidth >= 1200 && window.pageYOffset > 6500) {
+    fixed.classList.remove('active-f')
+  }
 
-    else{
-      fixed.classList.add('active-f')
-    }
+  if(innerWidth >= 1200 && window.pageYOffset <= 500) {
+    fixed.classList.remove('active-f')
+  }
 
+  //550
+  if(innerWidth >= 550 && innerWidth < 880 && innerWidth < 1200 && window.pageYOffset > 500) {
+    fixed.classList.add('active-f')
+  }
+  if(innerWidth >= 550 && innerWidth < 880 && innerWidth < 1200 && window.pageYOffset > 11000) {
+    fixed.classList.remove('active-f')
+  }
+
+  if(innerWidth >= 550 && innerWidth < 880 && innerWidth < 1200 && window.pageYOffset <= 500) {
+    fixed.classList.remove('active-f')
+  }
+
+  //880
+  if(innerWidth >= 880 && innerWidth < 1200 && window.pageYOffset > 500) {
+    fixed.classList.add('active-f')
+  }
+  if(innerWidth >= 880 && innerWidth < 1200 && window.pageYOffset > 7000) {
+    fixed.classList.remove('active-f')
+  }
+
+  if(innerWidth >= 880 && innerWidth < 1200 && window.pageYOffset <= 500) {
+    fixed.classList.remove('active-f')
+  }
   
+
+  //320
+  if(innerWidth >= 320 && innerWidth < 500 && window.pageYOffset > 500) {
+    fixed.classList.add('active-f')
+  }
+
+  if(innerWidth >= 320 && innerWidth < 500 && window.pageYOffset > 16000) {
+    fixed.classList.remove('active-f')
+  }
+
+  if(innerWidth >= 320 && innerWidth < 500 && window.pageYOffset <= 500) {
+    fixed.classList.remove('active-f')
+  }
+
 }
 
 window.onscroll=opacity

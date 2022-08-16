@@ -79,3 +79,59 @@
 
     &__img
         text-align: right
+
+
+@media (max-width: 1660px)
+    .header__wrapper
+        flex-direction: column
+
+    .header__text
+
+        & h1
+            text-align: center
+
+        &-list
+            grid-template-columns: 50% 50%
+            justify-content: center
+            justify-items: center
+
+        &-buttons
+            justify-content: center
+
+            & button
+                margin-right: 20px
+
+    .header__img
+        text-align: center
+        margin-top: 50px
+
+@media (max-width: 1065px)
+    .header__text-buttons
+        flex-direction: column
+
+@media (max-width: 950px)
+    .header__text-title br
+        display: none
+
+    .header__text
+        &-list
+            grid-template-columns: 100%
+
+            &-item
+
+                & br
+                    display: none
+
+                & h2
+                    text-align: center
+
+                & p
+                    text-align: center
+
+    .header__img img
+        max-width: 100%
+
+@media (max-width: 670px)
+    .header__text-title 
+        line-height: 35px
+        font-size: 23px

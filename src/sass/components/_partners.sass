@@ -59,14 +59,20 @@
         grid-template-columns: 50% 50%
         align-items: center
 
-        & img
-            max-width: 30%
-            margin: 0 auto
+@media (max-width: 600px)
+    .partners__company-1
+        grid-template-columns: 100%
+        grid-row-gap: 20px
 
-            &:nth-child(7)
-                max-width: 75%
-                margin-top: 30px
-                
+    .partners__company-2
+        grid-template-columns: 100% 
+        grid-row-gap: 20px
+
+    .partners__wrapper h2
+        font-size: 24px
+
+        & br
+            display: none
 
 @media (max-width: 540px)
     .partners__company

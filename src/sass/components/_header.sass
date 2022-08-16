@@ -9,10 +9,8 @@
     &__wrapper
         display: flex
         justify-content: space-between
-        align-items: center
 
     &__text
-        width: 50%
 
         &-title
             font-size: 34px
@@ -38,6 +36,46 @@
                     font-weight: $medium
                     font-family: $font
 
+        &-buttons
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 40px
+
+            &-red
+                background-color: #e32535
+                padding: 20px 50px
+                border-radius: 10px
+                color: $white
+                font-family: $font
+                font-weight: $bold
+                font-size: 16px
+                border: 2px solid #e32535
+                cursor: pointer
+                margin-right: 20px
+                
+                &:hover
+                    background-color: transparent
+                    color: #4e4e4e
+                    transition: 0.4s
+
+            &-white
+                background-color: transparent
+                padding: 20px 50px
+                border-radius: 10px
+                color: #4e4e4e
+                font-family: $font
+                font-weight: $bold
+                font-size: 16px
+                border: 2px solid transparent
+                cursor: pointer
+
+                &:hover
+                    border: 2px solid #4e4e4e
+                    transition: 0.4s
+                    color: #e32535
+                
+
+
     &__img
-        width: 50%
         text-align: right

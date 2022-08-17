@@ -38,11 +38,16 @@
         justify-content: space-between
         align-items: center
 
-        & p
+        & a
+            color: #4e4e4e
             margin-right: 50px
             font-size: 16px
             font-family: $font
             font-weight: $medium
+
+            &:hover
+                color: #e32535
+                transition: 0.4s
 
 
             &:nth-last-child
@@ -83,11 +88,11 @@
 
 
 @media (max-width: 1770px)
-    .nav__link p
+    .nav__link a
         margin-right: 30px
 
 @media (max-width: 1630px)
-    .nav__link p
+    .nav__link a
         margin-right: 20px
 
 @media (max-width: 1040px)

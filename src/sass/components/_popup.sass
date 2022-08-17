@@ -22,32 +22,18 @@
         
 
     &__content
-        background-color: $white
+        background-color: #f7f7f7
         color: #000
-        max-width: 70%
-        padding: 25px 50px 0px 50px
+        width: 700px
+        padding: 25px 80px 0px 80px
         position: relative
         border-radius: 40px
 
     &__wrapper
         display: flex
 
-    &__title 
-
-        display: flex
-        align-items: center
-        margin-bottom: 30px
-        width: 40%
-
-        & img
-            width: auto !important
-            height: 100% !important
-            position: relative
-            top: 30px
 
     &__text
-
-        margin-left: 120px
         width: 100%
         padding-bottom: 25px
 
@@ -56,7 +42,9 @@
                 size: calc(30px + 8 * (100vw / 1920))
                 weight: $bold
 
+            padding-top: 15px
             margin-bottom: 15px
+            text-align: left
 
         & p
             font:
@@ -64,13 +52,12 @@
                 weight: $medium
             color: #4E4E4E
             margin: 15px 0px !important
+            text-align: left
             
 
         & form
-            background-color: #f7f7f7
-            border-radius: 40px
-            padding: 20px 35px
-            width: 70%
+            padding: 20px 0px
+            width: 100%
 
             & p
                 font:
@@ -82,7 +69,7 @@
                 background: $red !important
                 text-transform: uppercase
                 margin-top: 20px
-                margin-bottom: 30px
+                margin-bottom: 20px
                 min-width: 150px
                 padding: 10px 15px
                 border: 0px
@@ -113,6 +100,23 @@
         & img
             width: 45px !important
             height: 45px !important
+
+textarea
+    padding: 10px 20px
+    background-color: #ffffff
+    border: 0px
+    border-radius: 10px
+    outline: none
+    font-family: $font
+    font-weight: $medium
+    font-size: 16px
+    color: #4e4e4e
+    width: 100%
+    min-height: 130px
+    max-width: 900px
+
+    &::placeholder
+        line-height: 26px
 
 .open
     opacity: 1
@@ -203,11 +207,9 @@ input[type="tel"]
 
 #popup-subtitle
     margin: 25px 0px !important
-    width: 70%
 
 #popup-footer
-    margin: 25px 0px !important
-    width: 70%
+    margin: 0px 0px 25px 0px !important
 
 #popup-contact
     margin-top: 30px !important
@@ -219,11 +221,8 @@ input[type="tel"]
         width: 100%
 
     #popup-footer
-        margin: 25px 0px !important
+        margin: 10px 0px !important
         width: 100%
-
-    .popup__text form
-        width: 80%
 
 
 @media (max-width: 1500px)
@@ -236,161 +235,68 @@ input[type="tel"]
                 margin-top: 15px !important
 
         & form
-            margin-top: 15px
+            padding: 15px 0
 
-    #popup-subtitle
-        width: 95%
-    #popup-footer
-        width: 79%
-
+            
+@media (max-width: 968px)
     .popup__content
-        max-width: 85%
+        padding: 25px 30px 0px 30px
+        width: 90%
+        max-width: 90%
 
-@media (max-width: 1310px)
-    .popup__content
+    .popup__wrapper
+        justify-content: center
+
+    .popup__text-submit
+        width: 100%
         max-width: 100%
 
-    .popup__text
-        margin-left: 100px
-
-        & form
-            width: 70%
+@media (max-width: 615px)
+    .popup__text h2
+        font-size: 28px
 
     #popup-subtitle
-        width: 80%
-    #popup-footer
-        width: 80%
+        font-size: 14px
 
-@media (max-width: 1200px)
-    #popup-subtitle
-        width: 100%
-    #popup-footer
-        width: 100%
+    textarea 
+        min-height: 180px
 
-    .popup__text form
-        width: 80%
+    .popup button
+        margin: 30px auto 0px auto
 
-@media (max-width: 1080px)
-    .popup__text
-        margin-left: 110px
-    
-    .popup__text form
-        width: 100%
+    .popup__checkbox label
+        text-align: center
+        display: inline-block
+        margin-top: 0px
 
-@media (max-width: 996px)
-    .popup
-
-        &__title
-            display: none
-
-        &__text
-            margin-left: 0%
-            & p
-                
-                margin: 15px 0px !important
-
-            & h2
-                text-align: center
-
-            & form
-                width: 100%
-
-                & button
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    margin: 20px auto 0px auto
-
-                
-
-
-@media (max-width: 620px)
-    .popup
-
-        &__content
-            padding: 25px 25px 0px 25px
-
-        &__close
-            right: 12px
-            top: 10px
-
-            & img
-                width: 25px !important
-                height: 25px !important
-
-        &__text
-
-            padding-bottom: 10px
-
-            & h2
-                font-size: calc(26px + 0 * (100vw / 1920))
-
-            & p
-                margin: 10px 0px !important
-                font-size: calc(16px + 0 * (100vw / 1920))
-
-                &:last-child
-                    margin-top: 10px !important
-                    line-height: 20px
-
-            & form
-                margin-top: 10px
-                padding: 10px 30px
-
-        &__checkbox label
-            line-height: 0px
-
-    input[type="email"], input[type="number"], input[type="tel"], input[type='text']
-        padding: 10px !important
-
-@media (max-width: 460px)
-
+    .popup__checkbox
+        padding-bottom: 0px
+@media (max-width: 470px)
+    .popup__text p:last-child
+        font-size: 14px
+    .popup__text form button
+        display: flex
+        justify-content: center
+        text-align: center
     .popup__text-form::before
-        margin-top: 10px
-    .popup
+        margin-left: 10px
+        margin-bottom: 8px
+    .popup__content
+        width: 100%
+        max-width: 100%
+        padding: 25px 10px 0px 10px
 
-        &__content
-            padding: 15px 10px 0px 10px
+    input[type=number]
+        width: 30%
+        margin-right: 0px
+        text-indent: 15px
 
-        &__close
-            right: 12px
-            top: 10px
+    input[type=tel]
+        width: 70%
+        margin-left: 10px
 
-        &__text
-
-            & h2
-                font-size: calc(24px + 0 * (100vw / 1920))
-
-            & p
-                margin: 5px 0px !important
-                font-size: calc(16px + 0 * (100vw / 1920))
-
-                &:last-child
-                    font-size: 14px
-
-            &-form
-                margin-top: 10px
-                flex-direction: column
-                align-items: flex-start
-
-            & form
-                margin-top: 10px
-                padding: 10px 10px
-
-        &__checkbox
-            margin-top: 15px
-
-    input[type="number"], input[type="tel"]
-        width: 100% !important
-        margin-bottom: 10px !important
-        margin-right: 0 !important
-
-
-@media (max-width: 400px)
-    .popup__close
-        right: 0px
-        top: -30px
-            
+    #popup-subtitle br
+        display: none
 
         
 

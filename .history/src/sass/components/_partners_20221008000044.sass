@@ -1,0 +1,92 @@
+.partners
+    padding: $grid
+    position: relative
+
+    &__wrapper
+        padding-top: 0px
+
+        & h2
+            font:
+                family: $font
+                size: 34px
+                weight: $bold
+            text-align: center
+            line-height: 44px
+
+            & span
+                color: #e32535
+        
+    &__company
+        margin: 45px 0px
+
+        & img
+            max-width: 100%
+
+        &-1
+            display: grid
+            grid-template-columns: 16% 16% 16% 16% 16% 16%
+            justify-items: center
+            justify-content: center
+
+        &-2
+            display: grid
+            grid-template-columns: 5% 15% 15% 15% 15% 15% 5%
+            justify-items: center
+            justify-content: space-between
+
+#wholesale_link
+    position: absolute
+    top: -150px
+
+
+@media (max-width: 1500px)
+    .partners
+        padding: $grid
+
+@media (max-width: 968px)
+
+    .partners__company
+        &:nth-child(2)
+            margin-bottom: 0px
+
+        &:nth-child(3)
+            margin-top: 20px
+    .partners__company-1
+        grid-template-columns: 50% 50%
+        grid-row-gap: 20px
+
+    .partners__company-2
+        grid-template-columns: 50% 50% 
+        grid-row-gap: 20px
+
+        & div
+            display: none
+
+
+@media (max-width: 840px)
+    .partners__company
+        display: grid
+        grid-template-columns: 50% 50%
+        align-items: center
+
+@media (max-width: 600px)
+    .partners__company-1
+        grid-template-columns: 100%
+        grid-row-gap: 20px
+
+    .partners__company-2
+        grid-template-columns: 100% 
+        grid-row-gap: 20px
+
+    .partners__wrapper h2
+        font-size: 24px
+
+        & br
+            display: none
+
+@media (max-width: 540px)
+    .partners__company
+        grid-template-columns: 100%
+
+        & img
+            margin: 20px auto
